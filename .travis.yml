@@ -1,3 +1,4 @@
+arch: arm64
 dist: xenial
 language: c
 # The leak sanitizer uses ptrace, which doesn't work under the
