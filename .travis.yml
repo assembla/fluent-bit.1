@@ -64,7 +64,7 @@ matrix:
       env: DOCKER_BUILD=1
       script: |
         echo "===== BUILD DOCKER IMAGE ======="
-        docker build -t test-image -f Dockerfile .
+        sudo docker build -t test-image -f Dockerfile.arm64 .
       addons:
         apt:
           sources: {}
