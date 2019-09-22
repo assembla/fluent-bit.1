@@ -81,6 +81,9 @@ addons:
     sources:
       - ubuntu-toolchain-r-test
     packages:
+      - cmake
+      - bison
+      - flex
       - gcc-7
       - g++-7
       - libsystemd-dev
