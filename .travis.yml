@@ -85,6 +85,7 @@ addons:
       - autoconf
       - make
       - cmake
+      - clang
       - bison
       - flex
       - gcc-7
