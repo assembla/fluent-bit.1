@@ -81,6 +81,9 @@ addons:
     sources:
       - ubuntu-toolchain-r-test
     packages:
+      - automake
+      - autoconf
+      - make
       - cmake
       - bison
       - flex
