@@ -72,6 +72,7 @@ matrix:
 
 script: |
   echo "CC = $CC, CXX = $CXX"
+  test -d /usr/lib/llvm-6.0 && PATH=/usr/lib/llvm-6.0/bin:$PATH
   sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 90
   sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-7 90
   sudo usermod -a -G systemd-journal $(id -un)
