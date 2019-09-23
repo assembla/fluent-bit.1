@@ -16,7 +16,7 @@ env:
   - FLB_OPT="-DFLB_JEMALLOC=On"
   - FLB_OPT="-DFLB_JEMALLOC=Off"
   - FLB_OPT="-DFLB_SMALL=On"
-  #- FLB_OPT="-DSANITIZE_ADDRESS=On"
+  - FLB_OPT="-DSANITIZE_ADDRESS=On"
   - FLB_OPT="-DSANITIZE_UNDEFINED=On"
 
 # Disable Memory Sanitizer since it causes conflicts on coroutines
