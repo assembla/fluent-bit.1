@@ -1,6 +1,7 @@
 #!/bin/bash
 
 nparallel=$(( $(getconf _NPROCESSORS_ONLN) > 8 ? 8 : $(getconf _NPROCESSORS_ONLN) ))
+nparallel=2
 
 [ -x /usr/bin/llvm-symbolizer-5.0 ] && export ASAN_SYMBOLIZER_PATH=/usr/bin/llvm-symbolizer-5.0
 [ -x /usr/local/clang-5.0.0/bin/llvm-symbolizer ] && export ASAN_SYMBOLIZER_PATH=/usr/local/clang-5.0.0/bin/llvm-symbolizer
